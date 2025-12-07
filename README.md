@@ -27,14 +27,15 @@
         100% { background-position: 100% 50%; }
     }
 
-    /* TRÁI TIM */
+    /* TRÁI TIM RỰC RỠ */
     .heart {
         width: min(35vw, 200px);
         height: min(35vw, 200px);
-        background: red;
+        background: radial-gradient(circle, #ff3d7a, #ff0055);
         position: absolute;
         transform: rotate(-45deg);
-        animation: heartbeat 1.5s infinite;
+        animation: heartbeat 1.4s infinite, glow 2s infinite alternate;
+        filter: drop-shadow(0 0 15px #ff1a75);
     }
 
     .heart:before,
@@ -42,7 +43,7 @@
         content: "";
         width: inherit;
         height: inherit;
-        background: red;
+        background: radial-gradient(circle, #ff3d7a, #ff0055);
         border-radius: 50%;
         position: absolute;
     }
@@ -59,25 +60,28 @@
 
     @keyframes heartbeat {
         0% { transform: scale(1) rotate(-45deg); }
-        50% { transform: scale(1.15) rotate(-45deg); }
+        50% { transform: scale(1.2) rotate(-45deg); }
         100% { transform: scale(1) rotate(-45deg); }
+    }
+
+    @keyframes glow {
+        0% { filter: drop-shadow(0 0 5px #ff4da6); }
+        100% { filter: drop-shadow(0 0 30px #ff1a75); }
     }
 
     /* CHỮ CHẠY */
     .run-text {
         position: absolute;
-        top: 50%;
         font-size: min(7vw, 32px);
         font-weight: bold;
         color: #ff0077;
-        transform: translateY(-50%);
-        animation: moveText 6s linear infinite;
+        animation: moveText 8s linear infinite;
         white-space: nowrap;
     }
 
     @keyframes moveText {
-        0% { left: -80%; }
-        100% { left: 110%; }
+        0% { left: -100%; }
+        100% { left: 120%; }
     }
 
     /* TIM BAY */
@@ -143,11 +147,17 @@
 <body>
 
     <div class="heart"></div>
-    <div class="run-text">🎉 Chúc Mừng Sinh Nhật BTrâm của gà 🎂💖</div>
+
+    <!-- 5 DÒNG CHỮ CHẠY -->
+    <div class="run-text" style="top: 20%;">💖 Chúc Mừng Sinh Nhật BTrâm yêu 💖</div>
+    <div class="run-text" style="top: 35%; animation-delay: 1s;">🎂 Chúc em luôn xinh đẹp và hạnh phúc 🎂</div>
+    <div class="run-text" style="top: 50%; animation-delay: 2s;">✨ Gà thương Trâm nhiều lắm ✨</div>
+    <div class="run-text" style="top: 65%; animation-delay: 3s;">🌸 Mong mọi điều tốt đẹp nhất đến với em 🌸</div>
+    <div class="run-text" style="top: 80%; animation-delay: 4s;">🎉 Happy Birthday to youuu 🎉</div>
 
     <!-- HỘP QUÀ -->
     <div id="giftBox">🎁 Mở Quà</div>
-    <div id="message">Chúc em có một ngày sinh nhật thật hạnh phúc 💖✨</div>
+    <div id="message">Chúc em một ngày sinh nhật thật tuyệt vời 💖✨</div>
 
     <!-- NHẠC -->
     <audio id="music" autoplay loop>
