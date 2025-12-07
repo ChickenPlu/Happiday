@@ -149,15 +149,15 @@
     <div class="heart"></div>
 
     <!-- 5 DÒNG CHỮ CHẠY -->
-    <div class="run-text" style="top: 20%;">💖 Chúc Mừng Sinh Nhật BTrâm yêu 💖</div>
+    <div class="run-text" style="top: 20%;">💖 Chúc Mừng Sinh Nhật BTrâm đáng yêu 💖</div>
     <div class="run-text" style="top: 35%; animation-delay: 1s;">🎂 Chúc em luôn xinh đẹp và hạnh phúc 🎂</div>
     <div class="run-text" style="top: 50%; animation-delay: 2s;">✨ Gà thương Trâm nhiều lắm ✨</div>
-    <div class="run-text" style="top: 65%; animation-delay: 3s;">🌸 Mong mọi điều tốt đẹp nhất đến với em 🌸</div>
+    <div class="run-text" style="top: 65%; animation-delay: 3s;">🌸 chúc em bình an và hạnh phúc 🌸</div>
     <div class="run-text" style="top: 80%; animation-delay: 4s;">🎉 Happy Birthday to youuu 🎉</div>
 
     <!-- HỘP QUÀ -->
     <div id="giftBox">🎁 Mở Quà</div>
-    <div id="message">Chúc em một ngày sinh nhật thật tuyệt vời 💖✨</div>
+    <div id="message">Anh yêu bé lắmmm 💖✨</div>
 
     <!-- NHẠC -->
     <audio id="music" autoplay loop>
